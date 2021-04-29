@@ -3,6 +3,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.io.BufferedReader;
+import java.util.Map.Entry;
+
 
 public class TuDien {
 	final static String filePath = "slang.txt";
@@ -30,9 +32,9 @@ public class TuDien {
 			if (a == 1) {
 				SearchSW();
 			}
-			// if (a == 2) {
-			// CapNhatHocSinh();
-			// }
+			if (a == 2) {
+			SearchDefinition();
+			}
 			// if (a == 3) {
 			// XoaHocSinh();
 			// }
@@ -63,8 +65,9 @@ public class TuDien {
 
 	public static void SearchDefinition() {
 		System.out.print("input definition: ");
-		String definition = sc.nextLine();
-		for (Entry<String, String> entry : slangdictionary.entrySet()) {
+		String definition = input.next();
+		
+		for (Entry<String, String> entry : dictionary.entrySet()) {
 			// System.out.println(entry.getValue());
 			if (entry.getValue().contains(definition)) {
 				System.out.println("Slang Word : " + entry.getKey());
