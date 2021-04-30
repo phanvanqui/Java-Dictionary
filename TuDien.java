@@ -33,7 +33,7 @@ public class TuDien {
 				SearchSW();
 			}
 			if (a == 2) {
-			SearchDefinition();
+				SearchDefinition();
 			}
 			// if (a == 3) {
 			// XoaHocSinh();
