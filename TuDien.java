@@ -32,7 +32,6 @@ public class TuDien {
 			System.out.print("selection input: ");
 
 			a = input.nextInt();
-			
 
 			if (a == 1) {
 				SearchSlangWord();
