@@ -89,7 +89,6 @@ public class TuDien {
 		String definition = input.next();
 
 		for (Entry<String, String> entry : dictionary.entrySet()) {
-			// System.out.println(entry.getValue());
 			if (entry.getValue().contains(definition)) {
 				System.out.println("Slang Word : " + entry.getKey());
 			}
@@ -114,7 +113,6 @@ public class TuDien {
 		String def = null;
 
 		for (Entry<String, String> entry : dictionary.entrySet()) {
-			// System.out.println(entry.getValue());
 			if (entry.getKey().equals(slang) || entry.getKey().equals(slang.toUpperCase())) {
 				System.out.println("slang was existing | 1: Overwrite | 2: Add new ");
 				System.out.print("selection: ");
@@ -153,7 +151,6 @@ public class TuDien {
 		String slang = input.next();
 
 		for (Entry<String, String> entry : dictionary.entrySet()) {
-			// System.out.println(entry.getValue());
 			if (entry.getKey().equals(slang) || entry.getKey().equals(slang.toUpperCase())) {
 				System.out.print("input definition: ");
 				String definition = input.next();
