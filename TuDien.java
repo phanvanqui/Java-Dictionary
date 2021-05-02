@@ -37,7 +37,7 @@ public class TuDien {
 				SearchSlangWord();
 			}
 			if (a == 2) {
-				SearchDefinition();
+					SearchDefinition();
 			}
 			if (a == 3) {
 				PrintFoundSlang();
