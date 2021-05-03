@@ -131,8 +131,9 @@ public class TuDien {
 			}
 		}
 
-		if (def.length() > 0) {
-			dictionary.put("-" + slang, def);
+		if (def != null){
+			if (!def.isEmpty() )
+				dictionary.put("-" + slang, def);
 		}
 
 		if (!add) {
